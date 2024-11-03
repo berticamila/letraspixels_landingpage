@@ -45,3 +45,10 @@ Contém links para redes sociais e informações de termos de uso e política de
 
 ## Como visualizar o projeto
 
+[Visite a minha página no GitHub Pages](https://berticamila.github.io/letraspixels_landingpage/)
+
+Você pode clonar este repositório e abrir o arquivo `index.html` em seu navegador para visualizar o projeto localmente.<br>
+```bash
+git clone https://github.com/berticamila/letraspixels_landingpage.git
+cd nome-do-repositorio
+
