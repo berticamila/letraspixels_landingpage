@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #061046 80%, rgb(134, 132, 89) 100%);
+    padding: 10px;
+    color: white;
+    max-height: 100%; 
+    width: 100%;
+}
+header img{
+    max-height: 100px;
+    border-radius: 4%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #111111;
+}
+
+#cta {
+    background-color: #332556;
+    color: #f4f4f7;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none; 
+    font-weight: bold;
+    border: 3px none #70727c;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer; 
+    display: inline-block; /* Para <a> se comporte como um bloco */
+}
+
+#cta:hover {
+    background-color: #70727c;
+    color: #fff;
+}
+#banner {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;  
+}
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.slide-text {
+    position: absolute;
+    bottom: 80px; /* Define a distância da borda inferior*/
+    right:2px;
+    transform: translate(-65%, -65%);
+    color: rgb(252, 251, 253);
+    font-size: 34px;
+    font-weight:bold;
+}
+#sobre {
+    background-image: url('images/livro_book.png'); 
+    background-size: cover; /* Para cobrir toda a seção */
+    background-position: center; 
+    height: 600px;
+    position: relative; 
+    color: white; 
+    padding: 20px; 
+}
+#sobre {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+#produtos{
+    padding-top: 5%;
+}
+#produtos-container{
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#produtos h2 {
+    text-align: center; /* Centraliza o texto do <h2> horizontalmente */
+    margin-bottom: 2px; /* Adiciona um espaço entre o título e os produtos */
+    font-size:xx-large;
+}
+
+#testemunhos{
+    padding-top: 40%;
+    text-align: center;
+    padding: 50px;
+}
+#testemunhos h2 {
+    padding-top: 5%;
+    margin-bottom: 55px;
+    font-size: xx-large;
+}
+
+.testemunho img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#testemunhos-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+.testemunho-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testemunho-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centraliza verticalmente */
+    padding: 30px;
+    background-color: #f4f4f9; 
+}
+#contato h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 800px; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    padding: 12px;
+    background-color: #332556; 
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #7245a0; 
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0073e6;
+}
+
+
+.sobre-conteudo {
+    position: absolute; /* Permite posicionar o conteúdo em cima da imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para centralizar */
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.sobre-conteudo{
+    width: 1200px;
+    height: 250px;
+}
+
+sobre-conteudo h2,
+p{
+    padding: 20px;
+    font-size: bolder;
+    font-size: 25px;
+}
+
+
+@media (max-width: 1285px){
+    .slide-text {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center;
+        text-align: center; /* Garante que o texto esteja centralizado no bloco */
+        max-width: 59%; /* Limita a largura para evitar que ultrapasse os limites do slide */
+        margin: 0 auto; 
+        transform: translate(0,0);
+        color: rgb(252, 251, 253);
+        font-size: 20px;
+        font-weight:bold;
+    }
+    .sobre-conteudo{
+        width: 400px;
+        height: 80px;
+    }
+    .sobre-conteudo p{
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .slide-text {
+        display: none;
+    }
+    .sobre-conteudo{
+        width: 400px;
+        height: 80px;
+    }
+    .sobre-conteudo p{
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .cta {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #contact-form input,
+    #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    }
+}
